@@ -24,36 +24,36 @@ partial class DataContextModelSnapshot : ModelSnapshot
         SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
         modelBuilder.Entity("Taller1.Shared.Entities.Employee", b =>
-            {
-                b.Property<int>("Id")
-                    .ValueGeneratedOnAdd()
-                    .HasColumnType("int");
+        {
+            b.Property<int>("Id")
+                .ValueGeneratedOnAdd()
+                .HasColumnType("int");
 
-                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+            SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                b.Property<string>("FirstName")
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .HasColumnType("nvarchar(30)");
+            b.Property<string>("FirstName")
+                .IsRequired()
+                .HasMaxLength(30)
+                .HasColumnType("nvarchar(30)");
 
-                b.Property<DateTime?>("HireDate")
-                    .HasColumnType("datetime2");
+            b.Property<DateTime?>("HireDate")
+                .HasColumnType("datetime2");
 
-                b.Property<bool?>("IsActive")
-                    .HasColumnType("bit");
+            b.Property<bool?>("IsActive")
+                .HasColumnType("bit");
 
-                b.Property<string>("LastName")
-                    .IsRequired()
-                    .HasMaxLength(30)
-                    .HasColumnType("nvarchar(30)");
+            b.Property<string>("LastName")
+                .IsRequired()
+                .HasMaxLength(30)
+                .HasColumnType("nvarchar(30)");
 
-                b.Property<decimal>("Salary")
-                    .HasColumnType("decimal(18,2)");
+            b.Property<decimal>("Salary")
+                .HasColumnType("decimal(18,2)");
 
-                b.HasKey("Id");
+            b.HasKey("Id");
 
-                b.ToTable("Employees");
-            });
+            b.ToTable("Employees");
+        });
 #pragma warning restore 612, 618
     }
 }

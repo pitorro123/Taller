@@ -4,13 +4,13 @@
                   @bind-Value="@Employee.FirstName"
                   For="@(() => Employee.FirstName)"
                   Class="mb-4"
-                  Placeholder="Nombres:"/>
+                  Placeholder="Nombres:" />
 
     <MudTextField Label="Apellidos"
                   @bind-Value="@Employee.LastName"
                   For="@(() => Employee.LastName)"
                   Class="mb-4"
-                  Placeholder="Apellidos"/>
+                  Placeholder="Apellidos" />
 
     <MudCheckBox @bind-Value="@Employee.IsActive"
                  For="@(() => Employee.IsActive)"
@@ -27,13 +27,13 @@
                    Editable="true"
                    Placeholder="Ingrese una fecha"
                    MaxDate="DateTime.Today" /> @*Limits the dates to Today, so no employees can be hired "in the future"*@
-                   
+
 
     <MudNumericField Label="Salario"
-                  @bind-Value="@Employee.Salary"
-                  For="@(() => Employee.Salary)"
-                  Class="mb-4"
-                  Placeholder="1000000"/>
+                     @bind-Value="@Employee.Salary"
+                     For="@(() => Employee.Salary)"
+                     Class="mb-4"
+                     Placeholder="1000000" />
 
     <MudButton Variant="Variant.Outlined"
                StartIcon="@Icons.Material.Filled.ArrowBack"

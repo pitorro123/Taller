@@ -10,8 +10,10 @@ public partial class EmployeeCreate
     private Employee employee = new();
 
     [Inject] private IRepository Repository { get; set; } = null!;
-    // para que sirve NavigationManager ? 
+
+    // para que sirve NavigationManager ?
     [Inject] private NavigationManager NavigationManager { get; set; } = null!;
+
     [Inject] private ISnackbar Snackbar { get; set; } = null!;
 
     private async Task CreateAsync()
