@@ -2,7 +2,7 @@
 using Taller.Backend.UnitsOfWork.Interfaces;
 using Taller.Shared.DTOs;
 
-namespace Taller.Backend.Controllers;
+namespace Taller.Backend.Controllers
 
 public class GenericController<T> : Controller where T : class
 {
